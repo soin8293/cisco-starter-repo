@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.ip-container {
+  border: 1px solid #ccc; /* Adds a light grey border */
+  padding: 20px; /* Adds space inside the border */
+  margin: 20px auto; /* Adds vertical space and centers the container horizontally */
+  background-color: #f9f9f9; /* Adds a light grey background */
+  width: 80%; /* Sets the width of the container to 80% of its parent */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
