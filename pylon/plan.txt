@@ -1,0 +1,15 @@
+[Browser] URL: http://localhost:55455/
+  │
+   ─ [index.html] - The entry point of web application. Loads the React app, including bundle.js.
+      │
+       ─ [bundle.js] - The bundled JavaScript file created by Webpack, containing entire React application.
+          │
+           ─ [App.js] - Root React component that renders the application's UI, including the Pylon Latency Monitor heading.
+          │    │
+          │     ─[LatencyComponent.js] - A React component that establishes a WebSocket connection to the server, receives timestamped packets, calculates latency, and displays it.
+          │
+           ─ [server.js] (Node.js/Express Server)
+               │
+                ─ Serves [index.html] and [bundle.js] to the client.
+               │
+                ─ [WebSocket Server] - Handles WebSocket connections, sends timestamped packets to the client, and is responsible for the real-time aspect of the app.
